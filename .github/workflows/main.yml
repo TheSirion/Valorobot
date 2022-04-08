@@ -3,11 +3,6 @@ name: env_variables
 ## pull request on the main branch
 on: [pull_request, push]
 
-env:
-  ## Sets environment variable
-  BOT_TOKEN: "OTYwMjExMTUwOTY3MDI5ODIy.YknIUg.j7Fk9dl2C4Lh7iU_P2EoVK_-s1Y"
-  GUILD_ID: "687629775439003678"
-
 jobs:
   job1:
     ## The type of runner that the job will run on,
