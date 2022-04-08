@@ -1,4 +1,4 @@
-name: env_tutorial
+name: env_variables
 ## Triggers the workflow on when there is a push, or
 ## pull request on the main branch
 on: [pull_request, push]
@@ -16,11 +16,11 @@ jobs:
     steps:
       - name: step 1
         ## Reference your environment variables
-        run: echo "The API key is:${{env.API_KEY}}"
+        run: echo "The bot token is:${{env.BOT_TOKEN}} and guild id is:${{env.GUILD_ID}}"
 
-  job2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: step 1
-        ## Another way reference your environment variables
-        run: echo "The API key is:$API_KEY"
+  # job2:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: step 1
+  #       ## Another way reference your environment variables
+  #       run: echo "The API key is:$API_KEY"
