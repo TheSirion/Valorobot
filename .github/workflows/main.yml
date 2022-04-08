@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: step 1
         ## Reference your environment variables
-        run: echo "The bot token is:${{env.BOT_TOKEN}} and guild id is:${{env.GUILD_ID}}"
+        run: echo "The bot token is:${{secrets.BOT_TOKEN}} and guild id is:${{secrets.GUILD_ID}}"
 
   # job2:
   #   runs-on: ubuntu-latest

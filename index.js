@@ -4,7 +4,7 @@ const valorantApi = require("./valorantApi");
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN || secrets.BOT_TOKEN);
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
